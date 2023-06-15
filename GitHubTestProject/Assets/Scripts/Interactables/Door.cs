@@ -22,6 +22,9 @@ public class Door : Interactable
 
     [Header("Sound and Text")]
 
+    [Tooltip("Play a sound when using the door")]
+    public bool playSoundOnUse = true;
+
     [Tooltip("Where the sounds are played from")]
     public AudioSource audioSource;
 
@@ -69,8 +72,8 @@ public class Door : Interactable
     {
         if (!isLocked)
         {
-            if (isOpen) OpenDoor();
-            else CloseDoor();
+            if (isOpen) OpenDoor(playSoundOnUse);
+            else CloseDoor(playSoundOnUse);
         }
         else
         {
@@ -101,16 +104,17 @@ public class Door : Interactable
         UpdateDoor();
     }
 
-    public void OpenDoor()
+    public void OpenDoor(bool playSound)
     {
         hinge.rotation = Quaternion.Euler(0, endPosition, 0);
-        audioSource.PlayOneShot(useSound);
+        if(playSound) audioSource.PlayOneShot(useSound);
     }
 
-    public void CloseDoor()
+    public void CloseDoor(bool playSound)
     {
         hinge.rotation = Quaternion.Euler(0, startPosition, 0);
-        audioSource.PlayOneShot(useSound);
+        if(playSound) audioSource.PlayOneShot(useSound);
+
     }
 
     private void OnCollisionEnter(Collision collider)

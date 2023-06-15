@@ -42,7 +42,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Quit()
     {
-        SceneManager.LoadScene("MainMenu");
+        Application.Quit();
     }
 
     public void OnTextChanged()

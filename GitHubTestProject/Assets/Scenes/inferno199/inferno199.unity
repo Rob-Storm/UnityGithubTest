@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.27139005, g: 0.25829628, b: 0.32595113, a: 1}
+  m_IndirectSpecularColor: {r: 0.26787555, g: 0.25806743, b: 0.33703694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4428,6 +4428,82 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &776455616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776455617}
+  - component: {fileID: 776455619}
+  - component: {fileID: 776455618}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &776455617
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776455616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2019299820}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &776455618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776455616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.41960785}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &776455619
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776455616}
+  m_CullTransparentMesh: 1
 --- !u!1 &790169525
 GameObject:
   m_ObjectHideFlags: 0
@@ -5095,7 +5171,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-17418
+  m_Name: pb_Mesh30398
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -10018,7 +10094,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-76234
+  m_Name: pb_Mesh30674
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -12671,6 +12747,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 776455617}
   - {fileID: 1974689605}
   - {fileID: 745316841}
   - {fileID: 45850550}
@@ -13649,6 +13726,7 @@ MonoBehaviour:
   isLocked: 1
   startPosition: 0
   endPosition: 90
+  playSoundOnUse: 1
   audioSource: {fileID: 8333459399873795153}
   useSound: {fileID: 8300000, guid: 28642d22f94ffcd40bfd7c32b8949f03, type: 3}
   lockSound: {fileID: 8300000, guid: 55ec24736c80e7b4a9cb20a24400852d, type: 3}
@@ -13751,7 +13829,7 @@ MonoBehaviour:
   door: {fileID: 2139914223278585496}
   collider: {fileID: 3578839386742580330}
   meshRenderer: {fileID: 4360301095720202370}
-  keyName: KeyName
+  keyName: KEY NAME HERE
   audioSource: {fileID: 8910176614627892091}
   pickupSound: {fileID: 8300000, guid: 7868e2aaa5ad83d42bf31f30c7623e31, type: 3}
 --- !u!65 &3578839386742580330
@@ -13792,7 +13870,7 @@ GameObject:
   - component: {fileID: 1622824087414907828}
   - component: {fileID: 4598209173809565368}
   m_Layer: 0
-  m_Name: f
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13953,7 +14031,7 @@ MonoBehaviour:
   flashlight: {fileID: 5776009857949731007}
   audioSource: {fileID: 4360253895160940439}
   flashToggle: {fileID: 8300000, guid: fe025195b2d2a2645917c799dc5d3624, type: 3}
-  interactDistance: 5
+  interactDistance: 3
   interactionText: {fileID: 666271423}
   cam: {fileID: 7201707321914987447}
 --- !u!65 &4343927193404146801

@@ -33,8 +33,9 @@ public class Key : Interactable
 
     public override void Interact()
     {
+        bool playSound = false;
         door.isLocked = false;
-        door.CloseDoor();
+        door.CloseDoor(playSound);
         audioSource.PlayOneShot(pickupSound);
         collider.enabled = false;
         meshRenderer.enabled = false;
