@@ -5,7 +5,6 @@ public class LightSwitch : Interactable
     [Tooltip("The Light/Lights you want to be affected")]
     public Light[] m_Light;
 
-
     [Tooltip("Do you want the light to start on?")]
     public bool isOn;
     bool start = true;
